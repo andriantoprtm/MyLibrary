@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0,initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <nav class="navbar">
+    <ul class="nav-list">
+      <li class="nav-item"><a href="#">Home</a></li>
+      <li class="nav-item"><a href="#">Daftar Manga</a></li>
+      <li class="nav-item"><a href="action.html">Rak Buku</a></li>
+      <li class="nav-item"><a href="#">Tentang kami</a></li>
+    </ul>
+  </nav>
+  <div class="title-manga">
+    <h1>Daftar Manga</h1>
+    <button>tambah manga</button>
+
+  </div>
+  <div class="tambah-modal hidden">
+    <div class="close-modal">&times;</div>
+    <div class="input">
+      <label for="inputBookTitle">Judul Manga</label>
+      <br>
+      <input id="inputBookTitle" type="text">
+    </div>
+    <div class="input">
+      <label for="inputBookTitle">Deskripsi Manga</label>
+      <br>
+      <input id="inputBookTitle" type="text">
+    </div>
+    <div class="input">
+      <form action="/action_page.php">
+        <input type="file" id="myFile" name="filename">
+      </form>
+    </div>
+    <div class="input">
+      <div class="buttonSubmit">
+        <input type="submit">
+      </div>
+    </div>
+  </div>
+  <div id="manga-container">
+    <!-- <div class="manga">
+      <img src="./asset/img/cote1.jpg" alt="">
+      <div class="manga-content">
+        <h3 class="manga-title">Class room the elite</h3>
+        <p class="manga-description">Yōkoso Jitsuryoku Shijō Shugi no Kyōshitsu e Jepang: ようこそ実力至上主義の教室へ, terj. Selamat
+          Datang di Kelas Doktrin Kemampuan Elit</p>
+        <button class="manga-button">pilih manga</button>
+      </div>
+    </div>
+    <div class="manga">
+      <img src="./asset/img/jujutsu.jpeg" alt="">
+      <div class="manga-content">
+        <h3 class="manga-title">Jujutsu No Kaisen</h3>
+        <p class="manga-description">A prequel series titled Jujutsu Kaisen 0: Jujutsu Hig started on April 28th, 2017
+          in the Jump GIGA 2017 vol.1 issue. The series was meant to be a short series and continued for four chapters
+          and concluded in the 2017 vol.4 issue
+          On March 5th, 2018, in the 2018-14 issue of Weekly Shonen Jump, the serialization of Jujutsu Kaisen started,
+          acting as an sequel to the previous short series, featuring new main characters. In December 2018, along with
+          the release of the series 3rd volume, an additional volume was released labelled as 0th volume and containing
+          the 4-chapter prequel series.</p>
+        <button class="manga-button">pilih manga</button>
+      </div>
+    </div>
+    <div class="manga">
+      <img src="./asset/img/kny.jpeg" alt="">
+      <div class="manga-content">
+        <h3 class="manga-title">Kimetsu No Yaiba</h3>
+        <p class="manga-description">Yōkoso Jitsuryoku Shijō Shugi no Kyōshitsu e Jepang: ようこそ実力至上主義の教室へ, terj. Selamat
+          Datang di Kelas Doktrin Kemampuan Elit</p>
+
+        <button class="manga-button">pilih manga</button>
+      </div>
+    </div>
+    <div class="manga">
+      <img src="./asset/img/naruto.jpeg" alt="">
+      <div class="manga-content">
+        <h3 class="manga-title">Naruto</h3>
+        <p class="manga-description">Yōkoso Jitsuryoku Shijō Shugi no Kyōshitsu e Jepang: ようこそ実力至上主義の教室へ, terj. Selamat
+          Datang di Kelas Doktrin Kemampuan Elit</p>
+        <button class="manga-button">pilih manga</button>
+      </div>
+    </div>
+
+    <div class="manga">
+      <img src="./asset/img/onepiece.jpg" alt="">
+      <div class="manga-content">
+        <h3 class="manga-title">One Piece</h3>
+        <p class="manga-description">Yōkoso Jitsuryoku Shijō Shugi no Kyōshitsu e Jepang: ようこそ実力至上主義の教室へ, terj. Selamat
+          Datang di Kelas Doktrin Kemampuan Elit</p>
+        <button class="manga-button">pilih manga</button>
+      </div>
+    </div>
+    <div class="manga">
+      <img src="./asset/img/doraemon.jpg" alt="">
+      <div class="manga-content">
+        <h3 class="manga-title">Doraemon</h3>
+        <p class="manga-description">Yōkoso Jitsuryoku Shijō Shugi no Kyōshitsu e Jepang: ようこそ実力至上主義の教室へ, terj. Selamat
+          Datang di Kelas Doktrin Kemampuan Elit</p>
+        <button class="manga-button">pilih manga</button>
+      </div>
+    </div>
+    <div class="manga">
+      <img src="./asset/img/rezero.jpeg" alt="">
+      <div class="manga-content">
+        <h3 class="manga-title">Re : Zero</h3>
+        <p class="manga-description">Yōkoso Jitsuryoku Shijō Shugi no Kyōshitsu e Jepang: ようこそ実力至上主義の教室へ, terj. Selamat
+          Datang di Kelas Doktrin Kemampuan Elit</p>
+        <button class="manga-button">pilih manga</button>
+      </div>
+    </div>
+    <div class="manga">
+      <img src="./asset/img/shokugeki.jpg" alt="">
+      <div class="manga-content">
+        <h3 class="manga-title">Shokugeki No Souma</h3>
+        <p class="manga-description">Yōkoso Jitsuryoku Shijō Shugi no Kyōshitsu e Jepang: ようこそ実力至上主義の教室へ, terj. Selamat
+          Datang di Kelas Doktrin Kemampuan Elit</p>
+        <button class="manga-button">pilih manga</button>
+
+      </div>
+    </div> -->
+  </div>
+
+  <div class="rak-title">
+    <h1>Rak Buku</h1>
+  </div>
+  <div class="rak-container">
+    <div class="rak">
+      <h2 class="shelf-title">Belum Selesai Baca</h2>
+      <ul class="book-list" id="unfinished-books">
+        <!-- Daftar buku yang belum selesai baca akan ditambahkan di sini -->
+      </ul>
+    </div>
+    <div class="rak">
+      <h2 class="shelf-title">Selesai Baca</h2>
+      <ul class="book-list" id="finished-books">
+        <!-- Daftar buku yang selesai baca akan ditambahkan di sini -->
+      </ul>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
